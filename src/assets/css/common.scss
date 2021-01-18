@@ -1,0 +1,39 @@
+$title-size:36px;
+$title-sizePhone:30px;
+.phone-col-set{
+  padding:0;
+}
+#app .info-title{
+  font-size:$title-size;
+}
+.banner-wrapper .home-banner-Area{
+  height:440px;
+  background-size: cover;
+}
+.banner-wrapper .bannerArea {
+  height:440px;
+  background-size: cover;
+}
+
+.b-lazy {
+  transition: opacity 500ms ease-in-out;
+  max-width: 100%;
+  opacity: 0;
+}
+.b-lazy.b-loaded {
+  opacity: 1;
+}
+@media(max-width: 768px){
+  body,html{
+    width:100%;
+  }
+  #app .info-title{
+    font-size: $title-sizePhone;
+  }
+  .banner-wrapper .bannerArea{
+    height:240px;
+  }
+  .banner-wrapper .home-banner-Area{
+    height:300px;
+  }
+}
